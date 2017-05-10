@@ -1,7 +1,7 @@
 {
   "name": "eda-cheatsheet",
   "version": "1.0.0",
-  "description": "## user stories",
+  "description": "Store and display commands learnt during course",
   "main": "index.js",
   "directories": {
     "test": "tests"
