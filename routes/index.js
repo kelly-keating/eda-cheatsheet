@@ -5,7 +5,13 @@ var router = express.Router()
 var db = require('../db')
 
 router.get('/', function (req, res) {
-  res.send('sup')
+  db.getTopics(req.app.get('connection'))
+    .then((result) => {
+      console.log(result)
+      return result
+    })
+    // .then((topics) => res.render('home', {topics}))
+    .then((nothing) => res.send('sup'))
 })
 
 module.exports = router
