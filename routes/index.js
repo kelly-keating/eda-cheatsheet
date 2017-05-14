@@ -10,8 +10,7 @@ router.get('/', function (req, res) {
       console.log(result)
       return result
     })
-    // .then((topics) => res.render('home', {topics}))
-    .then((nothing) => res.send('sup'))
+    .then((topics) => res.render('home', {topics}))
 })
 
 module.exports = router
